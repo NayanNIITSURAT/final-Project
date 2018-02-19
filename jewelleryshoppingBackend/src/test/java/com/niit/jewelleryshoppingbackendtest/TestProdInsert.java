@@ -1,4 +1,4 @@
-package com.niit.jewelleryshoppingbackendtest;
+package com.niit.jewelleryshoppingBackendtest;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -26,8 +26,8 @@ public class TestProdInsert {
 		Product product = new Product();
 		product.setPid(1);
 		product.setPname("ring");
-		product.setDescription("dimond ring");
-		product.setPrice(3000.50f);
+		product.setDescription("goldan ring");
+		product.setPrice(1500.45f);
 		product.setStock(10);
 		
 		Category category = new Category();

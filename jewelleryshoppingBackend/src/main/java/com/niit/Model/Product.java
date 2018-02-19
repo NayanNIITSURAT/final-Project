@@ -13,10 +13,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Component
 @Entity
-public class Product// why all these errors?? 
-{
-	
 
+public class Product {
 	@Id
 	@GeneratedValue
 	private int pid;
@@ -25,7 +23,7 @@ public class Product// why all these errors??
 	private Float price ;
 	private Integer stock;
 	
-@ManyToOne(fetch=FetchType.EAGER)// incorrect
+@ManyToOne(fetch=FetchType.EAGER)
 @JoinColumn(name="cid")
 private Category category;
 

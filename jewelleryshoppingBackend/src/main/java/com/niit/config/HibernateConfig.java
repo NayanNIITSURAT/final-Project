@@ -54,17 +54,17 @@ public class HibernateConfig {
 		return p;
 	}
 
-	// @SuppressWarnings("deprecation")
+	 @SuppressWarnings("deprecation")
 	@Autowired
 	@Bean(name = "sessionFactory")
 	public SessionFactory getSessionFac(DataSource datasource) {
 		LocalSessionFactoryBuilder sb = new LocalSessionFactoryBuilder(datasource);
-		System.out.println(" Vina User.class");
+		System.out.println(" userclass");
 		sb.addAnnotatedClass(User.class);
 		System.out.println("Category.class");
 
 		sb.addAnnotatedClass(Category.class);
-		System.out.println("Product");
+		System.out.println("Product class");
 
 		sb.addAnnotatedClass(Product.class);
 		System.out.println("Supplier.class");

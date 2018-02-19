@@ -1,4 +1,4 @@
-package com.niit.jewelleryshoppingbackendtest;
+package com.niit.jewelleryshoppingBackendtest;
 
 import org.junit.BeforeClass;
 import org.junit.Test;

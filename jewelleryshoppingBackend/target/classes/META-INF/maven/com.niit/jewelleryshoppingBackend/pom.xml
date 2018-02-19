@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>jewelleryshoppingBackend</name>
+  <name>CosmoHubBackend</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -15,6 +15,11 @@
   </properties>
 
   <dependencies>
+  <dependency>
+  <groupId>javax.xml.bind</groupId>
+  <artifactId>jaxb-api</artifactId>
+  <version>2.3.0</version>
+</dependency> 
     <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
@@ -24,10 +29,10 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>4.3.9.RELEASE</version>
+      <version>4.3.2.RELEASE</version>
     </dependency>
     
-     <dependency><!-- incorrect versions -->
+     <dependency>
   
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
@@ -43,22 +48,22 @@
     <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-orm</artifactId>
-    <version>4.3.9.RELEASE</version>
+    <version>4.3.12.RELEASE</version>
 </dependency>
     <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-tx</artifactId>
-    <version>4.3.9.RELEASE</version>
+    <version>4.3.12.RELEASE</version>
 </dependency>
     <dependency>
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-core</artifactId>
-    <version>4.3.9.Final</version>
+    <version>5.2.12.Final</version>
 </dependency>
  <dependency>
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-entitymanager</artifactId>
-    <version>4.3.9.Final</version>
+    <version>5.2.12.Final</version>
 </dependency>
 <dependency>
     <groupId>org.hibernate</groupId>
@@ -70,23 +75,16 @@
     <artifactId>h2</artifactId>
     <version>1.4.196</version>
 </dependency>
-
-
-   <dependency>
+ <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-jdbc</artifactId>
-    <version>4.3.9.RELEASE</version>
+    <version>4.3.12.RELEASE</version>
 </dependency>
-
-
-
-   <dependency>
+<dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-beans</artifactId>
-    <version>4.3.9.RELEASE</version>
+    <version>4.3.12.RELEASE</version>
 </dependency>
-
-
   </dependencies>
  <build>
   <plugins>

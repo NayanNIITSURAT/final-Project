@@ -1,4 +1,4 @@
-package com.niit.jewelleryshoppingbackendtest;
+package com.niit.jewelleryshoppingBackendtest;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -26,11 +26,11 @@ public class TestUserInsert {
 	public void testInsertUser(){
 		User user  = new User();
 		user.setFname("nayan");
-		user.setLname("pipaliya");
-		user.setEmail("nayan@gmail.com");
-		user.setContact("8401803297");
-		user.setDob("8/12/1994");
-		user.setAddr("sruat");
+		user.setLname("prajapati");
+		user.setEmail("nayan123@gmail.com");
+		user.setContact("99898898");
+		user.setDob("08/10/1994");
+		user.setAddr("surat");
 		user.setPass("1234");
 		user.setRole("user");
 		user.setEnabled(true);
