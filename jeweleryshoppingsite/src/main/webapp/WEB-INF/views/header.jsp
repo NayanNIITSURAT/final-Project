@@ -15,23 +15,23 @@
 <nav class="navbar navbar-inverse">
   <div  style="padding-bottom:0px;padding-top:0px; "  class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="first">OnLine jewellery shopping</a>
+      <a class="navbar-brand" href="index">OnLine jewellery shopping</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="first">Home</a></li>
+      <li class="active"><a href="index">Home</a></li>
         <li class="active"><a href="registration">Registration</a></li>
           <li class="active"><a href="admin">Admin</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Pandent</a></li>
-          <li><a href="#">Ring</a></li>
-          <li><a href="#">Nackless</a></li>
+          <li><a href="#">Jeans</a></li>
+          <li><a href="#">Shirt</a></li>
+          <li><a href="#">Shoes</a></li>
         </ul>
       </li>
       
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="registration"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="signin"><span class="glyphicon glyphicon-log	-in"></span> Login</a></li>
     </ul>
   </div>
