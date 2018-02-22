@@ -4,7 +4,7 @@
 <html>
 <head>
 <head>
-  <title>Bootstrap Example</title>
+  <title>Contact us</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,34 +17,59 @@ padding-bottom: 10px;
 }
 </style>
 </head>
-<body style="background-color: pink">
+<body >
 <jsp:include page="header.jsp"/>
 <div class="container">
 <h2>Contact Us Form</h2>
-  <form action="">
-    <div class="form-group">
-    <label>Username</label>
-    <input type="text" placeholder="Enter Username" name="uname" required></div>
+<fieldset style=" width:425px; height:400px;border:5px 5px 5px black; background-color:black; text-align :center; box-shadow:10px 10px 5px #5c5959; border-radius:10px 80px 10px 80px ;border:5px white dotted">
+                            <br />
+                            <div style="margin:0 auto 0 auto;">
+                                <span>
+                                <label style="color: #ffffff">
+&nbsp;Name:-</label></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input name="ctl00$ContentPlaceHolder1$txtname" type="text" id="ContentPlaceHolder1_txtname" style="height:16px;width:281px;" />
+&nbsp;<span id="ContentPlaceHolder1_RequiredFieldValidator1" style="color:#FF0066;font-size:Large;font-weight:bold;visibility:hidden;">*</span>
+                            </div>
+                            <br />
+                            <div style="margin:0 auto 0 auto;">
+                                <span>
+                                <label style="color: #ffffff">
+&nbsp;Email:-</label></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input name="ctl00$ContentPlaceHolder1$txtemail" type="text" id="ContentPlaceHolder1_txtemail" style="height:16px;width:281px;" />
+&nbsp;<span id="ContentPlaceHolder1_RequiredFieldValidator2" style="color:#FF0066;font-size:Large;font-weight:bold;visibility:hidden;">*</span>
+                            </div>
+                            <br />
+                            <div style="margin:0 auto 0 auto;">
+                                <span>
+                                <label    style="color: #ffffff">
+&nbsp;Phno:-</label></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input name="ctl00$ContentPlaceHolder1$txtphno" type="text" id="ContentPlaceHolder1_txtphno" style="height:16px;width:281px;" />
+&nbsp;<span id="ContentPlaceHolder1_RequiredFieldValidator3" style="color:#FF0066;font-size:Large;visibility:hidden;">*</span>
+                            </div>
+                            <div class="txt-lt" style="margin:0 auto 0 auto;">
+                                <span>
+                                <label style="color: #ffffff">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Subject:-</label></span>
+                                <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <textarea name="ctl00$ContentPlaceHolder1$txtsub" rows="2" cols="20" id="ContentPlaceHolder1_txtsub" style="height:79px;width:280px;">
+</textarea>
+                                <span id="ContentPlaceHolder1_RequiredFieldValidator4" style="color:#FF0066;font-size:Large;font-weight:bold;visibility:hidden;">*</span>
+                                <br />
+                            </div>
+                            <span id="ContentPlaceHolder1_Label1" style="color:White;font-size:Large;font-weight:bold;"></span>
+                            <br />
+                            <div style="margin:0 auto 0 auto;">
+                                <span>
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$Button1" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$Button1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_Button1" class="button" style="color:White;border-color:White;font-size:X-Large;font-weight:bold;height:34px;width:109px;" />
+                         &nbsp;<input type="submit" name="ctl00$ContentPlaceHolder1$Button2" value="Reset" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$Button2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_Button2" class="button" style="color:White;border-color:White;font-size:X-Large;font-weight:bold;height:34px;width:109px;" />
+                         &nbsp;&nbsp;&nbsp;&nbsp; 
+                                <div id="ContentPlaceHolder1_ValidationSummary1" style="color:#ffffff;display:none;">
 
-   <div class="form-group">
-     <label>Last Name:</label>
-    <input type="text" placeholder="Enter last name" name="last" required></div>
-    </div>
-      <div class="form-group">
-    <label for="country">Country</label>
-    <select id="country" name="country">
-    <option value="australia">India</option>
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-    </div>
-    <div class="form-group">
-    <label for="subject">Subject:</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px ;width:300px"></textarea></div>
+</div>
+                                </span>
+                            </div>
+                        </fieldset>
 
-    <input type="submit" value="Submit">
-  </form>
 </div>
 </body>
 <jsp:include page="footer.jsp"/>

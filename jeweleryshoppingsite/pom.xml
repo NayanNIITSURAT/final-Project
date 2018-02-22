@@ -21,7 +21,7 @@
   <artifactId>jewelleryshoppingBackend</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   </dependency>
-<!-- junit -->
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -29,9 +29,7 @@
       <scope>test</scope>
     </dependency> 
     
-     
-    <!-- j2ee-api -->
-  	
+
   	<dependency>
     <groupId>javaee</groupId>
     <artifactId>javaee-api</artifactId>
@@ -39,7 +37,7 @@
     <scope>provided</scope>
 </dependency>
 
- <!-- JSTL -->	
+
 <dependency>
     <groupId>jstl</groupId>
     <artifactId>jstl</artifactId>
@@ -47,14 +45,14 @@
 </dependency>
 
 
-<!-- SERVLET -->
+
 
 <dependency>
 	<groupId>javax.servlet</groupId>
 	<artifactId>javax.servlet-api</artifactId>
 	<version>3.1.0</version>
 </dependency>
- <!--Spring dependencies -->
+
     
      <dependency>
   
@@ -100,7 +98,7 @@
     <artifactId>spring-beans</artifactId>
     <version>4.3.12.RELEASE</version>
 </dependency>
- <!--Spring-security dependencies -->
+
 
 <dependency>
 			<groupId>org.springframework.security</groupId>

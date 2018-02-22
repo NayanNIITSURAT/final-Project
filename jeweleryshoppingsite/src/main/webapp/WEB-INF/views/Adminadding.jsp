@@ -14,18 +14,19 @@
   <style>
   body {
   padding : 10px ;
+  background-color:black;
   
 }
 
 #exTab1 .tab-content {
   color : black;
-  background-color: #428bca;
+  background-color:1DEEC8;
   padding : 5px 15px;
 }
 
 #exTab2 h3 {
   color : white;
-  background-color: #428bca;
+  background-color: E0CFD3;
   padding : 5px 15px;
 }
 
@@ -51,8 +52,8 @@
   </style>
 </head>
 <body>
-
-<div class="container"><h1>Admin Page  </h1></div>
+<jsp:include page="header.jsp"/>
+<div class="container"><h1 style="color:white"">Admin Page  </h1></div>
 <div id="exTab1" class="container">	
 <ul  class="nav nav-pills">
 			<li class="active">
@@ -122,5 +123,6 @@
 				
           
   </div>
+  <jsp:include page="footer.jsp"/>
 </body>
 </html>

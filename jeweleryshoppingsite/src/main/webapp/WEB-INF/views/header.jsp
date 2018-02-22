@@ -19,13 +19,14 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index">Home</a></li>
-        <li class="active"><a href="registration">Registration</a></li>
-          <li class="active"><a href="admin">Admin</a></li>
+      
+        <li><a href="registration"> <span class="glyphicon glyphicon">Registration</span></a></li>
+          <li ><a href="admin">Admin</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Jeans</a></li>
-          <li><a href="#">Shirt</a></li>
-          <li><a href="#">Shoes</a></li>
+          <li><a href="#">ring</a></li>
+          <li><a href="#">nackless</a></li>
+          <li><a href="#">pendent</a></li>
         </ul>
       </li>
       
