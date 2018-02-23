@@ -22,20 +22,45 @@
       
         <li><a href="registration"> <span class="glyphicon glyphicon">Registration</span></a></li>
           <li ><a href="admin">Admin</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">ring</a></li>
-          <li><a href="#">nackless</a></li>
-          <li><a href="#">pendent</a></li>
-        </ul>
-      </li>
-      
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="signin"><span class="glyphicon glyphicon-log	-in"></span> Login</a></li>
-    </ul>
-  </div>
+                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a> 
+                    <ul class="dropdown-menu"> 
+            
+                      <li><a href=" ">ALL</a></li>
+                    <c:forEach var="cat" items="${catlist}">
+                   <li><a href="${pageContext.request.contextPath}/productdetails?cid=${cat.cid}">${cat.cname} </a></<c:out value="${cat.cname}"></c:out></a></li>
+                  </c:forEach>
+                 
+                      </ul>   
+                    </li>   
+
+               
+               <div class="nav navbar-nav navbar right">
+               
+               <!--<c:if test="${pageContext.request.userPrincipal.name==null} ">
+               <li><a href="${pageContext.request.contextPath}/registration">Register</a></li>
+               <li><a href="${pageContext.request.contextPath}/goTologin">login</a></li>
+               </c:if>
+               <c:if test="${pageContext.request.userPrincipal.name!=null}">
+               <li><a >Welcome: ${pageContext.request.userPrincipal.name}</a></li>
+               <li>
+               <a href="<c:url value="/logout"/>">logout</a></li>
+               <li>
+               <a href="${ pageContext.request.contextPath}/goToCart">My cart</a></li>
+               </c:if>
+               </ul>
+               </div>-->	
+               <c:if test="${pageContext.request.userPrincipal.name != null}">
+		<c:out value="${SecurityContextHolder.getContext().getAuthentication().getAuthorities().toString()}"></c:out>
+		<h6 style="color:white;" align="right">
+			Welcome : ${pageContext.request.userPrincipal.name} 
+			 <a href="<c:url value="/logout" />">Logout</a>
+			
+		</h6>
+		</c:if>
+                
+          
+        </div>
+
 </nav>
   </body>
   </html>
